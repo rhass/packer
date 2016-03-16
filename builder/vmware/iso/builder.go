@@ -46,6 +46,7 @@ type Config struct {
 	Version             string   `mapstructure:"version"`
 	VMName              string   `mapstructure:"vm_name"`
 	BootCommand         []string `mapstructure:"boot_command"`
+  KeepRegistered      bool     `mapstructure:"keep_registered"`
 	SkipCompaction      bool     `mapstructure:"skip_compaction"`
 	VMXTemplatePath     string   `mapstructure:"vmx_template_path"`
 	VMXDiskTemplatePath string   `mapstructure:"vmx_disk_template_path"`

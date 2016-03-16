@@ -415,6 +415,12 @@ modify as well:
     format of the exported virtual machine. This defaults to "ovf".
     Before using this option, you need to install `ovftool`.
 
+-   `keep_registered` (boolean) - When set to true, packer does not unregister
+    the resulting VM from vSphere inventory upon successful completion. The
+    default behavioris `false`, which will keep the generated files on the
+    datastore and unregister the VM from the inventory. This only has an
+    effect if `remote_type` is enabled.
+
 ### Using a Floppy for Linux kickstart file or preseed
 
 Depending on your network configuration, it may be difficult to use packer's
